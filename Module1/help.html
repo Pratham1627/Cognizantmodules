@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Event Portal Support Center</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .help-card {
+            max-width: 900px;
+            margin: 24px auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 12px 28px rgba(0, 51, 102, 0.12);
+        }
+
+        .help-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        .help-links a {
+            display: inline-block;
+            background: #003366;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .help-links a:hover {
+            background: #00509e;
+        }
+
+        .help-list {
+            margin-top: 16px;
+            padding-left: 20px;
+        }
+
+        .help-list li {
+            margin-bottom: 10px;
+        }
+
+        .help-card h2 {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .contact-grid .contact-item {
+            padding: 16px;
+            border-radius: 14px;
+            background: #f8fbff;
+            border: 1px solid rgba(0, 51, 102, 0.08);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="portal-header">
+        <div class="portal-header-inner">
+            <div>
+                <h1>Support Center</h1>
+                <p>Find the right page, contact the team, and get quick answers.</p>
+            </div>
+            <div id="authStatus" class="auth-status"></div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Main Portal</a>
+        <a href="bootstrop.html">Dashboard</a>
+        <a href="auth.html">Sign In / Sign Up</a>
+        <a href="help.html">Support Center</a>
+    </nav>
+
+    <div class="help-card">
+        <h2>Need assistance?</h2>
+        <p>This portal is built around three connected pages: the public event portal, the operations dashboard, and this support center.</p>
+
+        <ul class="help-list">
+            <li><strong>index.html</strong>: the public event portal with registration, feedback, saved interests, and nearby event lookup.</li>
+            <li><strong>bootstrop.html</strong>: the operations dashboard for layouts, status cards, and portal controls.</li>
+            <li><strong>style.css</strong>: shared site styling used by all pages.</li>
+            <li><strong>script.js</strong>: shared behaviors for portal interactions.</li>
+        </ul>
+
+        <div class="contact-grid">
+            <div class="contact-item">
+                <strong>Email</strong>
+                <p>support@cityportal.com</p>
+            </div>
+            <div class="contact-item">
+                <strong>Phone</strong>
+                <p>+91 98765 43210</p>
+            </div>
+            <div class="contact-item">
+                <strong>Hours</strong>
+                <p>Mon - Sat, 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+
+        <p style="margin-top:18px;">Use the links below to move between the pages.</p>
+
+        <div class="help-links">
+            <a href="index.html">Open Main Portal</a>
+            <a href="bootstrop.html">Open Dashboard</a>
+            <a href="auth.html">Open Sign In / Sign Up</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
